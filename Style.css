@@ -1,0 +1,458 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); */
+
+/* Miniver */
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+
+/* Whole Changing */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Styling for whole Site */
+
+ ul{
+    list-style: none;
+
+ }
+ a{
+    text-decoration: none;
+ }
+
+ button{
+    background: none;
+    border: none;
+    cursor: pointer;
+
+ }
+
+ img{
+    width: 100%;
+ }
+
+ .section-content{
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    padding: 0 15px;
+ }
+
+ .section-content {
+  max-width: 1300px;
+  margin: 0 auto;        /* center align */
+  /* padding: 0 20px;      left-right space */
+}
+
+
+
+:root{
+    /* Colors */
+    --white-color: #fff;
+    --dark-color: #252525;
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --light-pink-color: #faf4f5;
+    --medium-grey-color: #ccc;
+
+    /* Font-size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* font-weight */
+    --font-weight-normal: 400; 
+    --font-weight-medium: 500; 
+    --font-weight-semibold: 600; 
+    --font-weight-bold: 700;
+    
+    /* Border-radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    /* Site-max-width */
+    --site-max-width: 1300px;
+
+
+}
+   
+
+
+/* Navbar Styling  */
+
+header{
+    background: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0; 
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+
+}
+
+
+.navbar .nav-logo .logo-text{
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    font-family: "Miniver";
+    display: flex;
+    margin-top: 15px;
+}
+
+.text-part{
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--secondary-color);
+    font-family: "Miniver";
+
+}
+
+.navbar .nav-menu .nav-link{
+    color: var(--white-color);
+    padding: 9px 17px;
+    border-radius: var(--border-radius-m);
+    font-size: var(--font-size-s);
+    transition: all 0.3s ease;
+    
+}
+
+.navbar .nav-menu .nav-link:hover{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 25px;
+}
+
+ .navbar :where(#menu-close-button , #menu-open-button){
+    display: none;
+    }
+
+
+.hero-section{
+    background: var(--primary-color);
+    min-height: 100vh;
+}
+
+.hero-section .section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+}
+
+.hero-section .section-content .title{
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-medium);
+    font-family: "Miniver";
+    color: var(--secondary-color);
+}
+
+.hero-section .section-content .subtitle{
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    margin-top: 10px;
+    font-weight: var(--font-weight-medium);
+
+}
+
+
+.hero-section .section-content .description{
+    max-width: 69%;
+    margin: 20px 0 30px;
+}
+
+.buttons{
+    display: flex;
+    gap: 9px;
+}
+
+.hero-section .section-content  .button{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 15px;
+    border-radius: var(--border-radius-m);
+    font-size: var(--font-size-s);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+
+.hero-section .section-content  .button:hover ,
+.hero-section .section-content  .Contact-US {
+    background: transparent;
+    border-color:var(--white-color) ;
+    color: var(--white-color);
+}
+
+
+.hero-section .section-content  .Contact-US:hover{
+        background: var(--secondary-color);
+    border-color:var(--secondary-color) ;
+    color: var(--primary-color);
+    
+}
+
+.hero-section .section-img-wrapper{
+    height: 470px;
+    width: 470px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin-right: 30px;
+}
+
+
+.about-section{
+    min-height: 100%;
+    /* background: var(red); */
+    /* background-color: red; */
+    padding: 190px 0;
+     
+    background-color: #F8F4E6;
+}
+
+.about-section  .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.about-section .about-content{
+   max-width: 65%;
+   text-align: center;
+}
+
+.about-content{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-detail{
+    padding: 60px 0 70px;
+    max-width: 70%;
+}
+
+.about-heading{
+    border-bottom: 6px solid var(--secondary-color);
+    padding-bottom: 15px ;
+}
+
+
+.about-img-wrapper{
+    max-width: 300px;
+}
+
+.about-icons{
+    display: flex;
+    gap: 12px;
+    color: var(--secondary-color);
+}
+
+.about-links{
+    color: var(--secondary-color);
+}
+
+.about-links:hover{
+    color: black;
+}
+
+
+
+/* Responsive this section */
+
+@media screen and (max-width: 900px) {
+
+    
+    :root{
+         --font-size-m: 1rem;
+    --font-size-l: 1.3rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 1.8rem;
+    }
+
+    
+    .hero-img{
+        padding-top: 67px;
+    } 
+     
+    
+
+    .navbar :where(#menu-close-button , #menu-open-button){
+        font-size: var(--font-size-l);
+        display: block;
+    }
+
+
+    #menu-close-button{
+        position: absolute;
+        top: 18px;
+        right: 12px;
+    }
+
+    #menu-open-button{
+        color: var(--white-color);
+    }
+    
+    .navbar .nav-menu{
+    
+        display: block;
+        background: var(--white-color);
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        transition: left 0.5s ease;
+        
+    }
+
+
+   .navbar .nav-menu {
+    left: -300px;
+    transition: left 0.5s ease;
+    
+   }
+
+   .navbar .nav-menu.active {
+    left: 0;
+   }
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
+    .navbar .nav-menu .nav-link{
+        color: var(--dark-color);
+        font-size: var(--font-size-m);
+        display: block;
+        margin-top: 13px;
+
+    }
+
+    /* About Section  */
+
+    .about-section  .section-content{
+            display: flex;
+            flex-direction: column-reverse;
+    }
+}
+
+
+/* Small Device */
+@media screen and (max-width: 700px) {
+   
+    .hero-section .section-content{
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          /* margin-bottom: 0; */
+    }
+
+    .hero-section .section-content .content-detail{
+        margin-top: -70px;
+    }
+
+    .hero-section .section-img-wrapper{
+        max-width: 300px;
+        margin-right: 0;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .hero-section .content-detail :is(.subtitle, .description){
+        max-width: 100%;
+        /* margin-top: 0; */
+    }
+
+    .hero-section .buttons{
+        justify-content: center;
+    }
+
+   /* About Section  */
+   .about-section {
+    min-height: 100%;
+    padding: 105px 0;
+}
+
+   .about-section .section-content{
+    display: flex;
+    flex-direction: column-reverse;
+      /* width: 100%;
+    padding: 10px 0px; */
+   }
+
+ .about-section .about-content {
+    max-width: 77%;
+    text-align: center;
+}
+
+   .about-detail {
+    padding: 60px 0 70px;
+    max-width: 100%;
+   }
+
+   .about-img-wrapper {
+    max-width: 240px;
+    margin-top: 30px;
+}
+}
+
+
+
+
+/* About Section */
+
+
+
+
+
+
